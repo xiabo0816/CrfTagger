@@ -7,5 +7,4 @@ data
 x64/*
 Debug/*
 data/*
-pch.h
-pch.cpp
+pch.*
