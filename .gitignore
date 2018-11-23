@@ -3,7 +3,6 @@
 *.user
 x64
 Debug
-data
 x64/*
 Debug/*
 data/*
