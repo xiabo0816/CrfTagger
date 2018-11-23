@@ -21,6 +21,9 @@ http://sighan.cs.uchicago.edu/bakeoff2005/data/icwb2-data.zip
 ```
 
 ## VS编译选项
+### 训练时的命令参数
+-L -f 3 -c 4.0 -p 12 .\data\template .\temp\msr_training.tagging4crf.utf8 .\data\model
+
 ### C/C++
 /JMC /permissive- /GS /W3 /Zc:wchar_t /ZI /Gm- /Od /sdl- /Fd"x64\Debug\vc141.pdb" /Zc:inline /fp:precise /D "HAVE_CONFIG_H" /D "_CRT_SECURE_NO_WARNINGS" /D "_DEBUG" /D "_CONSOLE" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX- /Zc:forScope /RTC1 /Gd /MDd /FC /Fa"x64\Debug\" /EHsc /nologo /Fo"x64\Debug\" /Fp"x64\Debug\CrfTagger.pch" /diagnostics:classic 
 
