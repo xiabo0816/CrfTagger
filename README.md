@@ -20,6 +20,12 @@ CrfTagger.exe -T -m data/model data/test.data
 http://sighan.cs.uchicago.edu/bakeoff2005/data/icwb2-data.zip
 ```
 
+## VS编译选项
+### C/C++
+/JMC /permissive- /GS /W3 /Zc:wchar_t /ZI /Gm- /Od /sdl- /Fd"x64\Debug\vc141.pdb" /Zc:inline /fp:precise /D "HAVE_CONFIG_H" /D "_CRT_SECURE_NO_WARNINGS" /D "_DEBUG" /D "_CONSOLE" /D "_UNICODE" /D "UNICODE" /errorReport:prompt /WX- /Zc:forScope /RTC1 /Gd /MDd /FC /Fa"x64\Debug\" /EHsc /nologo /Fo"x64\Debug\" /Fp"x64\Debug\CrfTagger.pch" /diagnostics:classic 
+
+### LINKER
+/OUT:"\XXX\CrfTagger\x64\Debug\CrfTagger.exe" /MANIFEST /NXCOMPAT /PDB:"XXX\CrfTagger\x64\Debug\CrfTagger.pdb" /DYNAMICBASE "kernel32.lib" "user32.lib" "gdi32.lib" "winspool.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "odbc32.lib" "odbccp32.lib" /DEBUG /MACHINE:X64 /INCREMENTAL /PGD:"XXX\CrfTagger\x64\Debug\CrfTagger.pgd" /SUBSYSTEM:CONSOLE /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /ManifestFile:"x64\Debug\CrfTagger.exe.intermediate.manifest" /ERRORREPORT:PROMPT /NOLOGO /TLBID:1 
 
 ## Reference
 
